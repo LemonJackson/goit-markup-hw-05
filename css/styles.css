@@ -219,6 +219,7 @@ body {
   line-height: 1.875;
   letter-spacing: 0.06em;
   padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .hero-btn:hover {
@@ -244,7 +245,11 @@ body {
   background-color: var(--grey-background-color);
   margin-bottom: 30px;
   border-radius: 4px;
-  padding: 25px 100px;
+  width: 270px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-title {
@@ -317,7 +322,8 @@ body {
 
 .social-link {
   display: flex;
-  padding: 12px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
@@ -326,7 +332,8 @@ body {
 
 .social-link.join {
   display: flex;
-  padding: 12px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
@@ -363,7 +370,8 @@ body {
 
 .client-link {
   display: flex;
-  padding: 16px 32px;
+  width: 170px;
+  height: 92px;
   border: 1px solid var(--logo-color);
   border-radius: 4px;
   align-items: center;
@@ -371,7 +379,9 @@ body {
   fill: var(--logo-color);
 }
 
-.client-link:hover {
+.client-link:hover,
+.client-link:focus,
+.client-link:active {
   fill: var(--acсent-color);
   border: 1px solid var(--acсent-color);
 }
@@ -397,6 +407,8 @@ body {
 .btn-list .portfolio-btn.active {
   background-color: var(--acсent-color);
   color: var(--primary-white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-btn:hover,
@@ -404,6 +416,8 @@ body {
 .portfolio-btn:active {
   background-color: var(--acсent-color);
   color: var(--primary-white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-list {
